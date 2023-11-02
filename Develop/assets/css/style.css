@@ -1,129 +1,159 @@
+/* Changes the height and width properties to account for border and padding, and by default removes all padding and margins. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Sets the background color for the entire page. */
 body {
     background-color: #d9dcd6;
 }
 
+/* Sets the spacing around the text in the header, as well as the background color, text color, and font-family. */
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Sets the main title to start a new line but not have a new line after it, and sets the title text size. */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Changes the color of a small section of the title text. */
 header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Lets the links section be on the same line as the title, and on the right side. Adds padding on the top, a right margin,
+    and adjusts the font-family and text size. */
 nav {
+    float: right;
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/* Removes the markers from the list of link elements. */
 nav ul {
     list-style-type: none;
 }
 
+/* Lets the link elements be in the same line and adds a left margin to fit in between each one. */
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Changes the text color for the links and removes the underline that links default to. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Adjusts the text size for all paragraph elements on the page; in the main content and the aside. */
 p {
     font-size: 16px;
 }
 
+/* Sets the size of the main image in the page, and adds a margin on the bottom. */
 .main-img {
-    height: 800px;
     width: 100%;
+    height: 800px;
     margin-bottom: 25px;
 }
 
+/* Holds the main articles in a section that takes up 75% of the width of the page, with the aside next to it. */
 .content {
-    width: 75%;
     display: inline-block;
+    width: 75%;
     margin-left: 20px;
 }
 
+/* Sets the height, padding, and bottom margin for each of the three main articles. Also sets the background
+    color and text color, and the font-family for the text */
 .main-article {
-    margin-bottom: 20px;
-    padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px;
+    margin-bottom: 20px;
     background-color: #0072bb;
     color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Sets the height for the image in each of the three main articles. */
 .main-article img {
     max-height: 200px;
 }
 
+/* Sets the bottom margin and text size for the heading text in each of the three main articles. */
 .main-article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* Makes the images in the first and third main articles be positioned to the left of the text, with a margin to the right. */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Makes the images in the second main article be positioned to the right of the text, with a margin to the left. */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Positions the sidebar elements to the right of the main articles, and if there is not enough room, below them. 
+    Adjusts the width to take up 20% of the width of the page, and at least the full height of the page, if the 
+    elements within do not take up more height. Adds padding around the sidebar and a margin on the right. Adjusts
+    the background-color of the sidebar, and the font family of the text within it. */
 aside {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
     float: right;
+    clear: both;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    margin-right: 20px;
     background-color: #2589bd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Sets the bottom margin and text color for each of the three articles in the sidebar. */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* Sets the bottom margin and centers the heading text in each of the three articles in the sidebar. */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Makes sure the image in each of the three articles in the sidebar displays on its own line. Sets the widest the
+    image can be, and adds a margin around them, using the browser's default margin for the left and right. */
 .benefit img {
     display: block;
-    margin: 10px auto;
     max-width: 150px;
+    margin: 10px auto;
 }
 
+/* Makes sure the footer is placed below the main content articles and sidebar articles. Adds padding around it,
+    sets the font family for the text within in, and aligns that text to the center. */
 footer {
-    padding: 30px;
     clear: both;
+    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
+/* Sets the text size for the heading text in the footer. */
 footer h2 {
     font-size: 20px;
 }
